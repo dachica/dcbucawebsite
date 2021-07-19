@@ -1,0 +1,345 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+body {
+  background-color: black;
+}
+
+.overview {
+    /* background: linear-gradient(to top, rgba(255, 145, 0, 0.205), transparent ),
+    url(../img/klijenti/severina-2.jpeg); */
+    background: url(../img/klijenti/hari-mata-hari_BG.jpg);
+    background-size: cover;
+    /* background-position: 100% 50%;     */
+    
+    width: 100%;
+    height: 350px;
+    
+}
+
+.repeat-dots {
+  height: 350px;
+  background: repeating-radial-gradient(circle, rgb(0, 0, 0) 0%, 
+  rgba(0, 0, 0, 0.6) 100%);
+  background-size: 3px 3px;
+  
+}
+
+.repeat-dots h1 {
+  color: white;
+  position: relative;
+  top: 35%;  
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 0;
+} 
+
+.pageTitle {
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.pageTitle h1 {
+  font-size: 2.5rem;
+  margin: 20px;
+  margin-top: 50px;
+}
+
+.divider {
+  background-color: rgba(153, 153, 153, 0.377);
+  width: 5%;
+  height: 5px;
+  margin: 20px auto 60px auto;
+}
+
+.klijent-section {
+  
+  background:black;
+  display: flex;
+  justify-content: space-evenly;
+  height: 800px;
+  color: aliceblue;
+  margin: 50px 0;
+  /* transition: transform 1s ease; */
+}
+
+.container {
+  
+  width: 60%;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  shape-outside: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+  flex-wrap: wrap;
+}
+
+.left {
+  padding-right: 15rem;
+}
+
+.right {
+  padding-left: 8rem;
+}
+
+
+
+.hari {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.582), rgba(0, 0, 0, 0.952)),
+  url(../img/klijenti/hari-mata-hari_BG.jpg);
+  background-position: center;
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.sasa {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.582), rgba(0, 0, 0, 0.952)),
+  url(../img/klijenti/sasa-kovacevicBG.jpg);
+  background-position: -80% 0;
+  background-size: cover;
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.seve {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.582), rgba(0, 0, 0, 0.952)),
+  url(../img/klijenti/seve.jpg);
+  background-position: center;
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.divjag {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.582), rgba(0, 0, 0, 0.952)),
+  url(../img/klijenti/divljejagodeBG.jpg);
+  background-position: -80% 0;
+  background-size: cover;
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.crvjab {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.582), rgba(0, 0, 0, 0.952)),
+  url(../img/klijenti/crvenajabukaBG.jpg);
+  background-position: center;
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.vid-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  width: 30%;
+}
+
+
+.vid-container iframe{
+  margin: 0 80px;
+  margin-bottom: 0;
+  width: 600px;
+  height: 350px;
+  vertical-align: middle;
+
+}
+
+
+.title {
+  margin-bottom: 100px;
+  font-size: 3rem;
+  position: relative;
+  padding-left: 100px;
+  animation: fadeInTop 1s ease;
+}
+
+.title span {
+  color: #FFE600;
+}
+
+.title::before {
+  position: absolute;
+  
+  top: 30px;
+  left: 0;
+  content: '';
+  background: white;
+  width: 90px;
+  height: 1px;
+  animation: fadeInLeft 1s ease;
+}
+
+.container p {
+  animation: fadeInRight 1s ease;
+}
+
+@keyframes fadeInRight {
+  0% {
+     opacity: 0;
+     transform: translateX(150px);
+  }
+  100% {
+     opacity: 1;
+     transform: translateX(0);
+  }
+} 
+
+@keyframes fadeInTop {
+  0% {
+     opacity: 0;
+     transform: translateY(-100px);
+  }
+  100% {
+     opacity: 1;
+     transform: translateY(0);
+  }
+} 
+
+@keyframes fadeInLeft {
+  0% {
+     opacity: 0;
+     transform: translateX(-150px);
+  }
+  100% {
+     opacity: 1;
+     transform: translateX(0);
+  }
+} 
+
+
+/* ============================= SOCMED KONTAKT ========================= */
+
+
+.socmed-kontakt {
+  background-color: #FFF;
+  width: 100%;
+  /* height: 200px; */
+}
+
+.socmed-kontakt_container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.social-icons-klijenti {
+  margin: 0.65rem 0;
+  padding: 0;
+  display: flex;
+}
+
+.socmed-icons_holder {
+  width: 50%;
+}
+
+.socmed_svg {
+  width: 25px;
+  fill:black;
+}
+
+.socmed_svg:hover {
+  fill: #ffc400;
+}
+
+.socmed-icons_holder_title {
+  font-size: 1.6rem;
+  color:rgb(0, 0, 0);
+}
+
+.contact-form {
+  width: 400px;
+  margin-bottom: 60px;
+}
+
+.socmed-kontakt-holder_title {
+  color:black;
+}
+
+label {
+  display: block;
+  color:black;
+  /* width: 500px; */
+  margin-top: 24px;
+}
+
+input {
+  background: black;
+}
+
+textarea {
+  background: black;
+}
+
+.first-label {
+  margin: 0;
+}
+
+[type="email"], 
+[type="text"],
+[name="message"] {
+  margin: 0;
+  padding: 8px;
+  width: 100%;
+}
+
+[name="message"] {
+  
+  resize: vertical;
+}
+
+[name="submit"] {
+  margin-top: 30px;
+  color: #ffdd6c;
+  font-size: 1rem;
+  padding: 0.85rem 1.5rem;
+  background: rgb(0, 0, 0);
+  border: 1px solid rgb(134, 134, 134);
+}
+
+[name="submit"]:hover {
+  background: #ffc400;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+}
+
+.contact-visibility {
+  /* transform: translateY(-200px); */
+  /* transition: all 2s ease-out; */
+  display: none;
+}
+
+.contact-visibility2 {
+  display: none;
+}
+
+.open {
+  animation: fadeTrans 1.5s linear;
+  display: block;
+}
+
+@keyframes fadeTrans {
+  0% {
+    transform: translateX(150%);
+    opacity: 0.01;
+  }
+  80% {
+    opacity: 0.05;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+
+/* .message-box {
+  height: 30px;
+} */
+
+.message-box.open {
+  height: 200px;
+}

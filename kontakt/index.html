@@ -1,0 +1,147 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../shared.css">
+    <link rel="stylesheet" href="kontakt.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,400&display=swap" rel="stylesheet">    <title>DCBUCA</title>
+</head>
+<body>
+    <div class="backdrop"></div>
+    <header class="main-header">
+        <a href="../index.html" class="main-header_brand"></a>
+        <a class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <nav class="main-nav">
+            <ul class="main-nav__items">
+                <li class="main-nav__item">
+                    <a href="../index.html">Početna</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="../studio/index.html">Studio</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="../D.C.Band/index.html">D.C.Buca Band</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="../galerija/index.html">Galerija</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#" id="activeNav">Kontakt</a>
+                </li>
+            </ul>
+        </nav>
+       
+    </header>
+    <div class="header-fix"></div>
+    <main>
+        <div class="mapouter">
+            <div class="gmap_canvas">
+                <iframe id="gmap_canvas" src="https://maps.google.com/maps?ll=44.79435809999999,20.4938072&q=Dojranska 3&t=&z=16&ie=UTF8&iwloc=&output=embed" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            </div>
+        </div>
+        <section class="contact-section">
+            <div class="contact-container">
+                <div class="contact-title">    
+                    <h2>Kontaktirajte nas</h2>
+                    <p>Pošaljite poruku i kontaktiraćemo Vas u najkraćem mogućem roku</p>
+                </div>
+                <div class="contactinfo-holder">
+                        <section class="contact-form">
+                            <form id="contact" name="contact" accept-charset="utf-8">
+                                <label class="first-label"><span>Ime</span><input name="name" type="text" placeholder="Ime"/></label>
+                                <label><span>Email</span><input name="email" type="email" placeholder="Email"/></label>
+                                <label><span>Poruka</span><textarea name="message" placeholder="..."></textarea></label>
+                                <input name="submit" type="submit" value="Poslati"/>
+                            </form>
+                        </section>
+                        <div class="info-columns">
+                            <div class="info-column">
+                                <div class="icon-content">
+                                    <i class="icon-pin"></i>
+                                </div>
+                                <div class="box-right">
+                                    <h4 class="box-right_titles">Adresa</h4>
+                                    <p class="box-right_description">Dojranska 3 <br>
+                                        11000 Beograd
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="info-column">
+                                <div class="icon-content">
+                                    <i class="icon-tel"></i>
+                                </div>
+                                <div class="box-right">
+                                    <h4 class="box-right_titles">Telefon</h4>
+                                    <p class="box-right_description">062/507-305</p>
+                                </div>
+                            </div>
+                            <div class="info-column">
+                                <div class="icon-content">
+                                    <i class="icon-email"></i>
+                                </div>
+                                <div class="box-right">
+                                    <h4 class="box-right_titles">Email</h4>
+                                    <p class="box-right_description">studiobuca@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="radno-vreme">
+                            <h1 class="radno-vreme-title">Radno vreme</h1>
+                            <p class="radno-vreme-desc">Obratite pažnju na radno vreme kako<br> biste
+                                izbegli razočarenje.
+                            </p>
+                            <h1>Ponedeljak-Petak</h1>
+                            <p>10:00-20:00</p>
+                            <h1>Vikend</h1>
+                            <p>Ne radimo</p>
+                        </div>
+                </div>
+                
+            </div>
+            
+        </section>
+    </main>
+    <footer class="main-footer">
+        <div class="footer-logocontainer">
+            <a href="../index.html" class="main-footer_brand"></a>
+        </div>
+        <div class="footer-info">
+            <div class="footer-container" id="footer-adress">
+                <h4 class="widget-title">BUCA STUDIO</h4>
+                <p class="widget-text">Dojranska 3<br> 11000 <br>
+                Beograd</p>
+            </div>
+            <div class="footer-container" id="footer-contact">
+                <h4 class="widget-title">KONTAKT</h4>
+                <p class="widget-text" id="kontakt-icons-before">
+                    <i class="feather-icon-phone"></i>+381-62-507-305<br>
+                    <i class="feather-icon-at"></i>studiobuca@gmail.com</p>
+            </div>
+            <div class="footer-container" id="footer-social">
+                <h4 class="widget-title">DRUŠTVENE MREŽE</h4>
+                <ul class="social-icons">
+                    <li class="icon-containers">
+                        <a class="icon-container" href="https://www.facebook.com/mega.buca.3" target="_blank">
+                            <svg class="socmed_svg svg_footer" viewBox="0 0 60 60" xmlns="https://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"><path d="M56.686 0H3.312A3.311 3.311 0 000 3.312v53.374A3.313 3.313 0 003.312 60h28.735V36.764h-7.819v-9.056h7.819v-6.679c0-7.748 4.731-11.97 11.645-11.97 3.315 0 6.157.248 6.986.356v8.1l-4.796.001c-3.759 0-4.484 1.787-4.484 4.409v5.78h8.969l-1.173 9.056h-7.797v23.236h15.288A3.315 3.315 0 0060 56.687V3.31A3.312 3.312 0 0056.686 0z" fill-rule="nonzero"/></svg>
+                        </a>
+                    </li>
+                    <li class="icon-containers">
+                        <a class="icon-container" href="https://www.instagram.com/d.c.buca/" target="_blank">
+                            <svg class="socmed_svg svg_footer" viewBox="0 0 61 61" xmlns="https://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"><path d="M44.063 10.664H15.938a5.28 5.28 0 00-5.274 5.274v28.125a5.28 5.28 0 005.274 5.273h28.125a5.28 5.28 0 005.273-5.273V15.938a5.28 5.28 0 00-5.273-5.274zM30 42.304c-6.784 0-12.305-5.52-12.305-12.304 0-6.784 5.521-12.305 12.305-12.305S42.305 23.216 42.305 30 36.785 42.305 30 42.305zm12.305-21.093a3.52 3.52 0 01-3.516-3.516 3.52 3.52 0 013.516-3.515 3.52 3.52 0 013.516 3.515 3.52 3.52 0 01-3.516 3.516z" fill-rule="nonzero"/><path d="M30 21.211c-4.846 0-8.789 3.943-8.789 8.79 0 4.845 3.943 8.788 8.79 8.788 4.845 0 8.788-3.943 8.788-8.789S34.846 21.211 30 21.211z" fill-rule="nonzero"/><path d="M51.094 0C55.94 0 60 4.06 60 8.906v42.188C60 55.94 55.94 60 51.094 60H8.906C4.06 60 0 55.94 0 51.094V8.906C0 4.06 4.06 0 8.906 0h42.188zm-7.031 52.852c4.846 0 8.789-3.943 8.789-8.789V15.938c0-4.846-3.943-8.79-8.789-8.79H15.938c-4.846 0-8.79 3.944-8.79 8.79v28.125c0 4.846 3.944 8.789 8.79 8.789h28.125z" fill-rule="nonzero"/></svg>                                        </a>
+                        
+                    </li>
+                    
+                </ul>
+            </div>
+            
+        </div>
+    
+</footer>
+    <script src="../shared.js" ></script>
+</body>
+</html>

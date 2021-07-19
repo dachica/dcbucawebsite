@@ -1,0 +1,412 @@
+* {
+    box-sizing: border-box;
+    
+}
+
+body {
+  background-color: #000;
+}
+
+.overview {
+    background: linear-gradient(to top, rgba(255, 145, 0, 0.075), transparent ),
+    url(../img/photos/30.jpg);
+    background: url(../img/photos/30.jpg);
+    background-position: 0 25%;
+    background-size: cover;
+    
+    width: 100%;
+    height: 350px;
+    
+}
+
+.repeat-dots {
+  height: 350px;
+  background: repeating-radial-gradient(circle, rgb(0, 0, 0) 0%, 
+  rgba(0, 0, 0, 0.4) 100%);
+  background-size: 3px 3px;
+  
+}
+
+.repeat-dots h1 {
+  color: white;
+  position: relative;
+  top: 35%;  
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 0;
+} 
+
+/* =======================DC BAND============================== */
+
+.dcband-section {
+  width: 100%;
+  background-color: #000;
+}
+
+.dcband-container {
+  
+  margin: 0 auto;
+  padding-top: 60px;
+  width: 75%;
+}
+
+.dcband-title {
+  margin: 0;
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: #ffcd2a;
+}
+
+.dcband-description-container {
+  display: flex;
+  color: #fff;
+}
+
+.dcband-description {
+  width: 40%;
+  margin: 2.5rem 6rem 2rem 1rem;
+  margin-left: 0;
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+
+
+.transparent-dcband {
+  
+  background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), transparent 
+  url(../img/bandPhotos/transparent.png) center center/cover no-repeat fixed ;;
+  padding: 4rem;
+  margin: 10px 0;
+}
+
+.transparent-dcband_link {
+  text-decoration: none;
+}
+
+.transparent-dcband:hover {
+  /* background: rgb(255, 215, 84); */
+  opacity: 0.55;
+}
+
+.transparent-section_content {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  
+}
+
+.transparent-section_content-items h4 {
+  margin: 0;
+  color: #fff;
+}
+
+.counterup {
+  font-size: 3.2rem;
+  font-weight: 200;
+  color: #ffcd2a;
+}
+
+
+/* ===========================MEMBER======================== */
+
+.member-section {
+  padding: 0 120px;
+}
+
+.member-card {
+  box-shadow: 5px 5px 15px #ffffff1e;
+  background:black;
+  display: flex;
+  justify-content: space-evenly;
+  height: 800px;
+  color: aliceblue;
+  margin: 50px 0;
+  transition: transform 1s ease;
+}
+
+
+
+.container {
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  shape-outside: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+  flex-wrap: wrap;
+  width: 40%;
+}
+
+
+
+.left {
+  padding-right: 15rem;
+  
+}
+
+.right {
+  padding-left: 7rem;
+}
+
+
+
+.buca {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)),
+  url(../img/photos/71.jpg);
+  /* background-image: url(../img/photos/71.jpg); */
+  background-position: 70% 0;
+  background-size: cover;
+  
+  clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.milann {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)),
+  url(../img/bandPhotos/mil.jpg);
+  background-position: 0 70%;
+  width: 40%;
+  background-size: cover;
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.acko {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)),
+  url(../img/bandPhotos/acko.jpg);
+  background-position: center;
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.boske {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)),
+  url(../img/bandPhotos/boske.jpg);
+  background-position: -80% 60%;
+  background-size: cover;
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+
+}
+
+.ivana {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)),
+  url(../img/bandPhotos/ivana.jpg);
+  background-position: center;
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+  margin-bottom: 50px;
+}
+
+.brankaa {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+  url(../img/bandPhotos/brankapavlovic2.png);
+  background-position: -50% 40%;
+  background-size: cover;
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+  width: 40%;
+}
+
+.text-container {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 60%;
+  padding: 50px;
+  
+}
+
+.text-container a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 100;
+  border: 1px solid white;
+  margin: 2rem 0;
+  padding: 10px 30px;
+  transition: 0.5s;
+  float: right;
+}
+
+.text-container a:hover {
+border: 1px solid  rgb(255, 200, 20);
+  background: rgb(255, 200, 20);
+  color: #000;
+  transition: 0.5s;
+}
+
+.opis {
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.opis-title {
+  margin: 0px;
+  font-size: 3rem;
+  position: relative;
+  padding-left: 100px;
+  animation: fadeInTop 1s ease;
+}
+
+.opis-title span {
+  color: #FFE600;
+}
+
+.opis-content {
+  margin-top: 15px;
+  float:right;
+  margin-right: 60px;
+}
+
+.opis-title::after {
+  position: absolute;
+  
+  bottom: -28px;
+  right: 0;
+  content: '';
+  background: #FFE600;
+  width: 50px;
+  height: 1px;
+  animation: fadeInLeft 1s ease;
+}
+
+.opis-title::before {
+  position: absolute;
+  
+  top: 30px;
+  left: 0;
+  content: '';
+  background: #FFE600;
+  width: 90px;
+  height: 1px;
+  animation: fadeInLeft 1s ease;
+}
+
+.text-container p {
+  font-size: 1.3rem;
+  color: #FFF;
+  animation: fadeInRight 1s ease;
+}
+
+@keyframes fadeInRight {
+  0% {
+     opacity: 0;
+     transform: translateX(150px);
+  }
+  100% {
+     opacity: 1;
+     transform: translateX(0);
+  }
+} 
+
+@keyframes fadeInTop {
+  0% {
+     opacity: 0;
+     transform: translateY(-100px);
+  }
+  100% {
+     opacity: 1;
+     transform: translateY(0);
+  }
+} 
+
+@keyframes fadeInLeft {
+  0% {
+     opacity: 0;
+     transform: translateX(-150px);
+  }
+  100% {
+     opacity: 1;
+     transform: translateX(0);
+  }
+} 
+
+@media (max-width: 640px) {
+  .dcband-description-container {
+    flex-direction: column;
+  }
+
+  .dcband-container {
+    width: 100%;
+    padding: 60px 30px 0px 1rem;
+    
+  }
+  .dcband-description {
+    width: 100%;
+    font-size: 1rem;
+    margin: 2.5rem 0 1rem 0;
+  }
+  .transparent-dcband {
+  
+    padding: 2rem 10px;
+    margin: 10px 0;
+  }
+  .transparent-section_content {
+    justify-content: space-around;
+  }
+
+  .transparent-section_content-items:nth-child(1),
+  .transparent-section_content-items:nth-child(2) {
+    display: none;
+  }
+
+  .transparent-section_content-items h4 {
+    margin: 0;
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+  .counterup {
+    font-size: 2rem;
+    font-weight: 200;
+    color: #ffcd2a;
+  }
+
+  .swiper1 {
+    height:400px;
+  }
+
+  .member-section {
+    padding: 0;
+  }
+
+  .member-card {
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .container {
+    padding: 0 0.5rem;
+    width: 100%;
+    min-height: 300px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
+  }
+
+  .text-container {
+    width: 100%;
+    
+    padding: 1rem;
+    
+  }
+  .text-container p {
+    font-size: 1rem;
+  }
+
+  .opis {
+    margin: 0;
+  }
+  .opis-title {
+    margin: 0px;
+    font-size: 1.8rem;
+    padding-left: 0;
+  }
+  .opis-content {
+    font-size: 0.85rem;
+  }
+
+  .opis-title::before {
+    display: none;
+  }
+}

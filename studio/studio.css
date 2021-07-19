@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+}
+body {
+  background-color: #000;
+}
+.overview {
+    background: linear-gradient(to top, rgba(255, 145, 0, 0.1), transparent ),
+    url(../img/photos/studio.png);
+    background-size: cover;
+    background-position: 100% 100%;
+    width: 100%;
+    height: 350px;
+    
+}
+
+.repeat-dots {
+    height: 350px;
+    background: repeating-radial-gradient(circle, rgb(0, 0, 0) 0%, 
+    rgba(0, 0, 0, 0.3) 100%);
+    background-size: 3px 3px;
+    
+}
+
+ .repeat-dots h1 {
+    color: white;
+    position: relative;
+    top: 35%;  
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 0;
+} 
+
+
+
+
+/* ============================================STUDIO SECTION================================ */
+
+.studio-section {
+  width: 100%;
+  background-color: #000;
+}
+
+.studio-container {
+  
+  margin: 0 auto;
+  padding: 60px 0 10px;
+  width: 75%;
+}
+
+.studio-container_title {
+  margin: 0;
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: #ffcd2a;
+}
+
+.studio-description-container {
+  margin: 3rem 0;
+  display: flex;
+  color: #fff;
+  /* color: #fff; */
+
+}
+
+.studio-description {
+  
+
+  margin: 1rem 6rem 2rem 1rem;
+  margin-left: 0;
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+.intro-text {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0 auto ;
+  color: #ffcd2a;
+}
+
+.divider {
+  background-color: rgb(255, 255, 255);
+  width: 5%;
+  height: 2px;
+  margin: 10px auto 40px auto;
+}
+
+/* =================================SWIPER========================= */
+
+.swiper1 {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  background: rgb(0, 0, 0);
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 30px auto;
+  padding: 20px 0;
+  
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+
+
+.gallery-thumbs .swiper-slide-thumb-active {
+  opacity: 1;
+  background-color: #FFE600;
+}
+
+.swiper1 img {
+  height: 100%;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    background-color: white;
+    background-color: rgba(255, 255, 255, 0);
+    right:10px;
+    padding: 30px;
+    color: #ffc400 !important;
+    fill: #ffc400 !important;
+    /* stroke: black !important; */
+}
+
+
+@media (max-width: 640px) {
+  .studio-container {
+    width: 100%;
+    padding: 60px 20px 0px 20px;
+    
+  }
+  .studio-description {
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .studio-container_title {
+    font-size: 2.2rem;
+  }
+
+  .swiper1 {
+    height:400px;
+  }
+}

@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,400&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+
+
+body {
+    
+    margin: 0 auto;
+    
+    
+    
+}
+
+
+/* ================================= HEADER =========================== */
+
+
+.main-header {
+    background:#000;
+    padding: 8px 0;
+    z-index: 50;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.header-fix {
+    /* position: relative; */
+    width: 100%;
+    height: 78px;
+    /* opacity: 0.2; */
+
+}
+
+
+
+.header-logocontainer {
+    margin-top: 12px;
+}
+
+.main-header_brand {
+    content: url(img/logo/bucaLogoNew2.svg);
+    width: 230px;
+    
+}
+    
+.main-nav {
+    display: flex;
+    
+    margin-right: 30%;
+    align-items: center;
+}
+    
+.main-nav__items {
+    display: flex;
+    
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+.main-nav__item {
+    padding: 1rem;
+    position: relative;
+}
+
+
+
+.main-nav__item a:hover {
+    color: #ffcd2a;
+}
+
+#activeNav {
+    color: #ffcd2a;
+}
+    
+.main-nav__item a {
+    
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* =================================MOBILE NAVIGATION ====================== */
+
+.backdrop {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    
+}
+
+
+.mobile-nav {
+    display: none;
+    background: rgb(0, 0, 0);
+    position: fixed;
+    /* opacity: 0;
+    transform: translateY(-3rem); */
+    top: 61;
+    left: 0;
+    width: 100%;
+    z-index: 200;
+    
+}
+
+.toggle-button {
+    display: none;
+    outline: none;
+    cursor: pointer;
+    background: black;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    margin: 8px 0;
+    
+}
+
+.nav_open {
+    display: block;
+    /* opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s, transform 1s; */
+}
+
+.nav_close {
+    display: none;
+}
+
+.mobile-nav__items {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+.mobile-nav__item {
+    padding: 16px;
+}
+    
+.mobile-nav__item a:hover {
+    color: #FFE600;
+}
+    
+.mobile-nav__item a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+/* ============================== FOOTER ============================== */
+
+
+.main-footer {
+    /* margin-top: 100px; */
+    z-index: 10;
+    background-color: rgb(0, 0, 0);
+    padding: 80px 0;
+    /* opacity: 0.5; */
+}
+
+.footer-bigcontainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-logocontainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-footer_brand {
+    content: url(img/logo/bucaLogoNew2.svg);
+    height: 65px;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.widget-title {
+    font-size: 1.15rem;
+    margin: 0 0 10px;
+}
+
+.widget-text {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    padding: 0 48px;
+}
+
+.feather-icon-phone::before {
+    content: url(img/icons/phone_orange.svg);
+    display: inline-block;
+    width: 16px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.feather-icon-at {
+    content: url(img/icons/email_orange.svg);
+    display: inline-block;
+    width: 16px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.social-icons {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.icon-containers {
+    list-style: none;
+    margin: 0 8px;
+}
+
+.icon-containers:first-child {
+    margin-left: 0;
+}
+
+.svg_footer {
+    width: 25px;
+    fill: #fff;
+}
+
+.svg_footer:hover {
+    fill: #f1b900;
+}
+
+    
+
+
+@media (max-width: 25rem) {
+    .main-nav {
+        display: none;
+    }
+
+    .header-fix {
+        height: 55px;
+    }
+
+    .main-header {
+        justify-content: space-between;
+    }
+
+    .main-header_brand {
+        width: 150px;
+    }
+
+
+    .toggle-button {
+        display: inline-block;
+        margin-left: 16px;
+    }
+    
+    
+
+    
+}
+             
+        
+    
+
+
+
+

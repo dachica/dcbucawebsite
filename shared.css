@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,400&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    margin: 0 auto;
+}
+
+
+/* ================================= HEADER =========================== */
+
+
+.main-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 50;
+    background: rgb(0, 0, 0);
+    width: 100%;
+}
+
+.header-fix {
+    height: 70px;
+}
+
+
+.main-header_brand {
+    content: url(img/logo/bucaLogoNew2.svg);
+    width: 230px;
+    
+}
+    
+.logo-container {
+    display: flex;
+}
+    
+.main-nav__items {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav__item {
+    padding: 1.5rem 2rem;
+}
+
+
+
+.main-nav__item a:hover {
+    color: #ffcd2a;
+}
+
+#activeNav {
+    color: #ffcd2a;
+}
+    
+.main-nav__item a {
+    
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* =================================MOBILE NAVIGATION ====================== */
+
+.toggle-button {
+    position: absolute;
+    right: 1rem;
+    top: 0.5em;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+}
+
+.bar {
+    width: 100%;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+
+
+
+
+
+
+/* ============================== FOOTER ============================== */
+
+
+.main-footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 80px 0;
+    background: #000;
+}
+
+
+
+
+
+.main-footer_brand {
+    content: url(img/logo/bucaLogoNew2.svg);
+    height: 5rem;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.widget-title {
+    color: #ffcd2a;
+    font-size: 1.15rem;
+    margin: 0 0 10px;
+}
+
+.widget-text {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    padding: 0 3rem;
+}
+
+.feather-icon-phone::before {
+    content: url(img/icons/phone_orange.svg);
+    display: inline-block;
+    width: 1rem;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+.feather-icon-at {
+    content: url(img/icons/email_orange.svg);
+    display: inline-block;
+    width: 1rem;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+.social-icons {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.icon-containers {
+    list-style: none;
+    margin: 0 8px;
+}
+
+.icon-containers:first-child {
+    margin-left: 0;
+}
+
+.svg_footer {
+    width: 25px;
+    fill: #fff;
+}
+
+.svg_footer:hover {
+    fill: #f1b900;
+}
+
+/* ===========================LETTER FIXES ================     */
+
+@media (max-width: 1200px) {
+    .footer-container {
+        padding: 0 1rem;
+    }
+    .main-footer_brand {
+        height: 4.5rem;
+    }
+}
+
+
+
+
+@media (max-width: 844px) {
+    .main-nav__item {
+        padding: 1.5rem 1rem;
+    }
+    
+}
+
+
+
+
+@media (max-width: 640px) {
+    .main-nav__item {
+        padding: 1.5rem 0.5rem;
+    }
+    .main-footer {
+        flex-direction: column;
+        padding-top: 0;
+        padding-bottom: 20px;
+    }
+    .footer-info {
+        flex-direction: column;
+        
+    }
+    .footer-container {
+        padding: 1.5rem 1rem;
+    }
+    .main-footer_brand {
+        justify-content: flex-start;
+    }
+    .footer-logocontainer {
+        padding: 1.5rem 1rem;
+    }
+    .logo-container {
+
+        justify-content: flex-start;
+    }
+    .main-header {
+        padding: 0 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .main-nav {
+        display: none;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .main-nav__items {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .main-nav__item {
+        text-align: center;
+        padding: 0.75rem;
+    }
+    
+    .header-fix {
+        height: 40px;
+    }
+
+    .main-header_brand {
+        width: 180px;
+    }
+
+
+    .toggle-button {
+        display: flex;
+    }
+    
+    .navOpen {
+        display: flex;
+    }
+
+    
+}
+             
+        
+    
+
+
+
+
